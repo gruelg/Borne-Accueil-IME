@@ -1,0 +1,19 @@
+.Menu_Accueil
+{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+.Menu_demarrage
+{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+
+}

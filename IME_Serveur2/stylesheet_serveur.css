@@ -1,0 +1,42 @@
+.groupe_couleur
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.trombinoscope
+{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.photo_profil
+{
+    position: absolute;
+    left: 0%;
+    top: 10%;
+}
+.planning
+{
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 20%;
+  top: 15%;
+  width: 75%;
+  height: 50%;
+  border: 1px solid black;
+}
+.titre_planning
+{
+  position: absolute;
+  left: 40%;
+  top: 9%;
+
+}
+.heure
+{
+  position: absolute;
+  left: 80%;
+  top: 0%;
+}

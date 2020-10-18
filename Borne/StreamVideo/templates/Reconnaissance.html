@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Reconnaissance faciale</title>
+    <script type="text/javascript">
+
+    function Counter(IDElement, tempsRestant=10, vitesse)
+    {
+      var compteARebours = document.getElementById(IDElement);
+      var temps = 10;
+      this.decompte=decompte();
+
+      function decompte()
+      {
+        if(tempsRestant >= 0)
+        {
+          compteARebours.innerHTML = tempsRestant;
+          tempsRestant --;
+          setTimeout(decompte, vitesse);
+        }
+      }
+    }
+
+    window.onload=function()
+    {
+      new Counter('Decompte', 10, 1000);
+    }
+
+    </script>
+    <!-- Temps superieur a la duree de la reconnaissance faciale sinon le fichier
+          "tabnom.csv" n'est pas fermé par le programme main.py et il ne sera pas lu correctement
+            par la page suivant-->
+    <meta http-equiv="refresh" content="15;url=http://127.0.0.1/Borne/nom_fichier_csv.php">
+    <!-- balise de redirection vers la page nom_fichier_csv.php -->
+  </head>
+
+  <body>
+    	Decompte : <span id="Decompte">10</span>
+    <h1>Reconnaissance Faciale </h1>
+    <img id="bg" src="{{ url_for('video_feed') }} "height="320" width="320">
+    <div id="output"></div>
+</body>
+</html>
